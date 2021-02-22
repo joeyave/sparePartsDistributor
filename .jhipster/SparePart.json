@@ -1,0 +1,41 @@
+{
+  "name": "SparePart",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "term",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "delivery",
+      "otherEntityRelationshipName": "sparePart",
+      "relationshipName": "delivery",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210222121209",
+  "entityTableName": "spare_part",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

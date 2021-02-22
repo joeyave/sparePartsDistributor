@@ -1,0 +1,37 @@
+{
+  "name": "Provider",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "delivery",
+      "otherEntityRelationshipName": "provider",
+      "relationshipName": "delivery",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210222121036",
+  "entityTableName": "provider",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

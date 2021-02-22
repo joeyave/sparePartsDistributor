@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Delivery.
+    -->
+    <changeSet id="20210222121236-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="provider_id"
+                                 baseTableName="delivery"
+                                 constraintName="fk_delivery_provider_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="provider"/>
+
+        <addForeignKeyConstraint baseColumnNames="spare_part_id"
+                                 baseTableName="delivery"
+                                 constraintName="fk_delivery_spare_part_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="spare_part"/>
+
+    </changeSet>
+</databaseChangeLog>
