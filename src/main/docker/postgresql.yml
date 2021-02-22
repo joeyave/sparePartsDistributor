@@ -1,0 +1,12 @@
+version: '2'
+services:
+  sparepartsdistributor-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/sparePartsDistributor/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=sparePartsDistributor
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
